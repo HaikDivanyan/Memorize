@@ -23,9 +23,9 @@ struct Theme {
 
 
 func getRandomTheme() -> Theme {
-    let Themes = [Theme(name: "Summer", emojis: ["☀️","👙","🍉"], numberOfPairs: 3),
-                  Theme(name: "Winter", emojis: ["☃️","❄️","🥶","🎅🏻"], numberOfPairs: nil),
-                  Theme(name: "Fall", emojis: ["👻", "🎃", "🕷"], numberOfPairs: 3),
-                  Theme(name: "Spring", emojis: ["🌼","🌸","🌦"], numberOfPairs: 3)]
+    let Themes = [Theme(name: "Summer", emojis: ["☀️","👙","🍉", "☃️","❄️","🥶","🎅🏻", "🌼","🌸","🌦"], numberOfPairs: 8),
+                  Theme(name: "Winter", emojis: ["☀️","👙","🍉", "☃️","❄️","🥶","🎅🏻", "🌼","🌸","🌦"], numberOfPairs: nil),
+                  Theme(name: "Fall", emojis: ["☀️","👙","🍉", "☃️","❄️","🥶","🎅🏻", "🌼","🌸","🌦"], numberOfPairs: 8),
+                  Theme(name: "Spring", emojis: ["☀️","👙","🍉", "☃️","❄️","🥶","🎅🏻", "🌼","🌸","🌦"], numberOfPairs: 8)]
     return Themes.randomElement()!
 }

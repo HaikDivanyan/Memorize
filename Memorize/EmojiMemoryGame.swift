@@ -15,7 +15,7 @@ class EmojiMemoryGame: ObservableObject {
      private static func createMemoryGame() -> MemoryGame<String> {
         let theme = getRandomTheme()
         //let emojis: Array<String> = ["👻", "🎃", "🕷"]
-        return MemoryGame<String>(numberOfPairsOfCards: theme.numberOfPairs ?? Int.random(in: 2...4), gameTheme: theme) { pairIndex in theme.emojis[pairIndex] }
+        return MemoryGame<String>(numberOfPairsOfCards: theme.numberOfPairs ?? Int.random(in: 5...9), gameTheme: theme) { pairIndex in theme.emojis[pairIndex] }
      }
     
     // MARK: - Access to the Model
